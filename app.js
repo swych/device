@@ -3,7 +3,7 @@ var WebSocketServer = require('ws').Server;
 var os = require('os');
 var ifaces = os.networkInterfaces();
 var request = require('request');
-
+var uuid = require('uuid');
 // final workflow test
 
 function pollPin(cb) {
