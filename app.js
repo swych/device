@@ -40,7 +40,7 @@ function handleRequest(payload, client){
 }
 
 function listen(cb){
-    var wss = new WebSocketServer({ port: 80 }),
+    var wss = new WebSocketServer({ port: 8080 }),
         clients = {};
 
     wss.on('connection', function connection(ws) {
