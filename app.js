@@ -3,7 +3,7 @@ var WebSocketServer = require('ws').Server;
 var uuid = require('uuid');
 var myAnalogPin = new mraa.Aio(0);
 
-// this is the cmd line endpoint
+// final workflow test
 
 function pollPin(cb) {
     'use strict';
