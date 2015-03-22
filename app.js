@@ -91,8 +91,8 @@ listen(function(){
         });
     });
 
-    request({url:'http://api.swych.com/device/register',qs:{ips:networkInterfaces.join(',')}});
+    request({url:'http://api.swych.io/device/register',qs:{ips:networkInterfaces.join(',')}});
     setInterval(function () {
-        request({url:'http://api.swych.com/device/ping',qs:{ips:networkInterfaces.join(',')}});
+        request({url:'http://api.swych.io/device/ping',qs:{ips:networkInterfaces.join(',')}});
     }, 500);
 });
