@@ -22,6 +22,7 @@ function pollPin(cb) {
 
 function handleRequest(payload, client){
     var request = JSON.parse(payload);
+    console.log('REQUEST',request);
     switch(request.command){
         case 'on':
             deviceInterface.on();
