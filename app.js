@@ -2,6 +2,7 @@ var deviceInterface = require('./lib/device-interface');
 var WebSocketServer = require('ws').Server;
 var os = require('os');
 var ifaces = os.networkInterfaces();
+var request = require('request');
 
 // final workflow test
 
